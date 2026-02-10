@@ -43,9 +43,10 @@ int main (void) {
         /* Toggle PA5 on and off repeatedly by writing to its ODR */
         GPIOA_ODR ^= (1U << 5); // XOR bit 5
 
-        for (int i = 0; i < 1E6; ++i) {
+        for (volatile int i = 0; i < 1E6; ++i) {
             __asm__("nop"); // do nothing, just waste time
         }
+        
     }
     return 0;
 }

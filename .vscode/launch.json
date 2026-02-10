@@ -181,7 +181,9 @@
       "device": "STM32L4",
       "svdFile": "${workspaceRoot}/mcu_support/l4xx/STM32L4x2.svd",
       "searchDir": ["${workspaceRoot}/mcu_support/stm32"],
-      "runToMain": true,
+      "gdbPath": "C:/arm-gnu-toolchain/bin/arm-none-eabi-gdb.exe",
+      "openOCDPath": "C:/msys64/mingw64/bin/openocd.exe",
+      "runToEntryPoint": "main",
       "configFiles": [
         "${workspaceRoot}/mcu_support/stm32/stlink-dap.cfg",
         "${workspaceRoot}/mcu_support/stm32/l4xx/stm32l4x.cfg"
